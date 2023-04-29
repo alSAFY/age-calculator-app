@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../assets/);
+}
+*{
+    font-family: Poppins;
+}
+.pink-color{
+    color: hsl(259, 100%, 65%);
+}
+.pink-bg{
+    background-color: hsl(259, 100%, 65%);
+}
+.container-fluid{
+    background-color: hsl(0, 0%, 94%);
+}
+.main{
+    border-radius: 2rem 2rem 8rem 2rem ;
+}
+label:not(>p){
+    letter-spacing: 3px;
+}
+input{
+    font-size: 2rem;
+    line-height: 100%;
+}
+input[type = number]::-webkit-inner-spin-button,
+input[type = number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+input[placeholder]{
+    font-size: 2rem;
+    opacity: .5;
+}
+.button{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s all linear;
+    z-index: 1;
+}
+.button:hover {
+    background-color: #141414;
+}
+.line{
+    height: 0;
+    border: #dbdbdb 1px solid ;
+}
+
+#output p{
+    font-size: 4rem;
+    font-style: italic;
+}
+@media screen and (max-width: 768px){
+    .button{
+        margin: auto !important;
+
+    }
+}

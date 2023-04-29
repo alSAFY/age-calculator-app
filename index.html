@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid vh-100 d-flex justify-content-center align-items-center py-3">
+  <div class="container main px-5 py-2  bg-white">
+    <div class="row form d-flex justify-content-start py-3">
+
+      <label class="col-4 fw-bold" for="day"> DAY
+        <input type="number" id="day" class="form-control my-1 fw-bolder py-1 " placeholder="DD" />
+        <p class="fw-normal"></p>
+      </label>
+      <label class="col-4 fw-bold" for="month">MONTH
+        <input type="number" id="month" class="form-control my-1 fw-bolder py-1" placeholder="MM" />
+        <p class="fw-normal"></p>
+      </label>
+      <label class="col-4 fw-bold" for="year">YEAR
+        <input type="number" id="year" class="form-control my-1 fw-bolder py-1" placeholder="YYYY" />
+        <p class="fw-normal"></p>
+      </label>
+    </div>
+
+    <div class=" position-relative d-flex align-items-center  my-2">
+      <div class=" line position-absolute w-100"></div>
+      <div id="button" class="button pink-bg  p-2 ms-md-auto ">
+        <div class="d-flex justify-content-center h-100 w-100 align-items-center">
+          <img src="./assets/images/icon-arrow.svg" class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+    <div id="output">
+      <p class="fw-bold"><span id="years" class="pink-color fw-bolder me-2"> -- </span>years</p>
+      <p class="fw-bold"><span id="months" class="pink-color fw-bolder me-2"> -- </span>months</p>
+      <p class="fw-bold"><span id="days" class="pink-color fw-bolder me-2"> -- </span>days</p>
+    </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#" class="pink-color fw-bold fs-6 text-decoration-none">Alsafy Hassan</a>.
+  </div>
+  </div>
+  
+</div>
+  
+  <script src="./js/jquery-3.6.4.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
